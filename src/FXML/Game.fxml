@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="GameTab" fx:id="GameTab" prefHeight="630.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uet.oop.bomberman.Control.GameController">
+   <children>
+      <Canvas fx:id="canvas" height="393.0" layoutX="395.0" layoutY="128.0" width="460.0" />
+   </children>
+</AnchorPane>

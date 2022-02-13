@@ -1,0 +1,18 @@
+.button:hover{
+    -fx-translate-y: -3px;
+}
+.button:pressed{
+    -fx-translate-y: -1px;
+}
+.button{
+    -fx-background-color: #B0E2FF;
+}
+
+.Pane {
+    -fx-background-color: darkgray;
+
+}
+
+.text{
+    -fx-fill: blue;
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1296.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uet.oop.bomberman.Control.CongratController">
+   <children>
+      <Pane layoutX="-13.0" layoutY="180.0" prefHeight="300.0" prefWidth="1310.0" styleClass="Pane" stylesheets="@Style.css">
+         <children>
+            <Text fill="#2009b2" layoutX="307.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="CHÚC MỪNG CHIẾN THẮNG" wrappingWidth="875.7291870117188">
+               <font>
+                  <Font name="System Bold" size="64.0" />
+               </font>
+            </Text>
+            <Button layoutX="422.0" layoutY="186.0" mnemonicParsing="false" onAction="#newGame" text="Trò chơi mới">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+               <effect>
+                  <InnerShadow choke="0.32" height="22.98" radius="10.99" width="22.98" />
+               </effect>
+            </Button>
+            <Button layoutX="845.0" layoutY="185.0" mnemonicParsing="false" onAction="#onExit" text="Thoát">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+               <effect>
+                  <InnerShadow choke="0.34" height="22.98" radius="10.495000000000001" />
+               </effect>
+            </Button>
+            <ImageView fitHeight="289.0" fitWidth="372.0" layoutX="-33.0" layoutY="-112.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@bomber.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="144.0" fitWidth="145.0" layoutX="193.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@congrat1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

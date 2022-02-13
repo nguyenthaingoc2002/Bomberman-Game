@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="MenuTab" fx:id="MenuTab" prefHeight="630.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uet.oop.bomberman.Control.MenuController">
+   <children>
+      <ImageView fitHeight="865.0" fitWidth="1487.0" layoutX="-67.0" layoutY="-55.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="-67.0" AnchorPane.topAnchor="-55.0">
+         <image>
+            <Image url="@bomberman.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="314.0" layoutY="269.0" onAction="#PlayGame" prefHeight="93.0" prefWidth="210.0" AnchorPane.leftAnchor="314.0" AnchorPane.topAnchor="269.0">
+         <graphic>
+            <ImageView fitHeight="102.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@play.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <InnerShadow choke="0.14" height="48.67" radius="22.3525" width="42.74" />
+         </effect>
+      </Button>
+      <Button layoutX="314.0" layoutY="410.0" onAction="#Guide" prefHeight="93.0" prefWidth="209.0">
+         <graphic>
+            <ImageView fitHeight="87.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@rule.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <InnerShadow choke="0.15" height="38.79" radius="17.905" width="34.83" />
+         </effect>
+      </Button>
+      <Button layoutX="42.0" layoutY="588.0" onAction="#Music" prefHeight="67.0" prefWidth="89.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="42.0">
+         <graphic>
+            <ImageView fx:id="imageView" fitHeight="68.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@unmute.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <InnerShadow choke="0.36" />
+         </effect>
+      </Button>
+      <Button layoutX="313.0" layoutY="562.0" mnemonicParsing="false" onAction="#onExit" prefHeight="93.0" prefWidth="213.0">
+         <effect>
+            <InnerShadow choke="0.23" height="30.88" radius="14.94" width="30.88" />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="84.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
